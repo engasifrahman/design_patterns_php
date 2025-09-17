@@ -1,13 +1,13 @@
 <?php
 
-namespace DesignPatterns\Creational\Builder;
+namespace DesignPatterns\Creational\Builder\WithBuilder;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
 /**
  * Builder Pattern Demonstration
  */
-class BuilderDemo
+class WithBuilderDemo
 {
     /**
      * Run the builder pattern demonstration.
@@ -152,5 +152,5 @@ class BuilderDemo
 }
 
 // Run the demonstration
-$demo = new BuilderDemo();
+$demo = new WithBuilderDemo();
 $demo->run();

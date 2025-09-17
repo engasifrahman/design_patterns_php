@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Builder;
+namespace DesignPatterns\Creational\Builder\WithBuilder;
 
 enum Topping: string
 {

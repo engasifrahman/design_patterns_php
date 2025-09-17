@@ -1,12 +1,12 @@
 <?php
 
-namespace DesignPatterns\Creational\Builder;
+namespace DesignPatterns\Creational\Builder\WithBuilder;
 
 /**
  * Builder interface defining the steps to build a pizza.
  * Follows Interface Segregation Principle.
  */
-interface PizzaBuilderInterface
+interface IPizzaBuilder
 {
     /**
      * Set the size of the pizza.

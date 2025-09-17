@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Builder;
+namespace DesignPatterns\Creational\Builder\WithBuilder;
 
 /**
  * Pizza product class representing the complex object to build.

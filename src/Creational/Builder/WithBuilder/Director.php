@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Builder;
+namespace DesignPatterns\Creational\Builder\WithBuilder;
 
 /**
  * Director class that defines the order of building steps.
@@ -11,10 +11,10 @@ class Director
     /**
      * Build a Margherita pizza.
      *
-     * @param PizzaBuilderInterface $builder The builder to use
+     * @param IPizzaBuilder $builder The builder to use
      * @return Pizza The constructed Margherita pizza
      */
-    public function buildMargherita(PizzaBuilderInterface $builder): Pizza
+    public function buildMargherita(IPizzaBuilder $builder): Pizza
     {
         return $builder
             ->setSize(PizzaSize::MEDIUM)
@@ -27,10 +27,10 @@ class Director
     /**
      * Build a Meat Lovers pizza.
      *
-     * @param PizzaBuilderInterface $builder The builder to use
+     * @param IPizzaBuilder $builder The builder to use
      * @return Pizza The constructed Meat Lovers pizza
      */
-    public function buildMeatLovers(PizzaBuilderInterface $builder): Pizza
+    public function buildMeatLovers(IPizzaBuilder $builder): Pizza
     {
         return $builder
             ->setSize(PizzaSize::LARGE)
@@ -45,10 +45,10 @@ class Director
     /**
      * Build a Veggie Supreme pizza.
      *
-     * @param PizzaBuilderInterface $builder The builder to use
+     * @param IPizzaBuilder $builder The builder to use
      * @return Pizza The constructed Veggie Supreme pizza
      */
-    public function buildVeggieSupreme(PizzaBuilderInterface $builder): Pizza
+    public function buildVeggieSupreme(IPizzaBuilder $builder): Pizza
     {
         return $builder
             ->setSize(PizzaSize::LARGE)
@@ -64,10 +64,10 @@ class Director
     /**
      * Build a Hawaiian pizza.
      *
-     * @param PizzaBuilderInterface $builder The builder to use
+     * @param IPizzaBuilder $builder The builder to use
      * @return Pizza The constructed Hawaiian pizza
      */
-    public function buildHawaiian(PizzaBuilderInterface $builder): Pizza
+    public function buildHawaiian(IPizzaBuilder $builder): Pizza
     {
         return $builder
             ->setSize(PizzaSize::MEDIUM)
@@ -80,10 +80,10 @@ class Director
     /**
      * Build a Spicy pizza.
      *
-     * @param PizzaBuilderInterface $builder The builder to use
+     * @param IPizzaBuilder $builder The builder to use
      * @return Pizza The constructed Spicy pizza
      */
-    public function buildSpicy(PizzaBuilderInterface $builder): Pizza
+    public function buildSpicy(IPizzaBuilder $builder): Pizza
     {
         return $builder
             ->setSize(PizzaSize::MEDIUM)
