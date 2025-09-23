@@ -20,7 +20,7 @@
 
 > **"The Subclass Director of Object Creation"** 🎬
 > 
-> The **Factory Method** pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. It lets a class defer instantiation to subclasses, promoting loose coupling and flexibility.
+> The **Factory Method** pattern defines an interface for creating an object in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 ## 🎯 Overall Concept
 

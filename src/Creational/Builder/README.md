@@ -20,7 +20,7 @@
 
 > **"The Architectural Director of Object Construction"** 🎬
 > 
-> The **Builder** pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It provides step-by-step object creation with full control over each construction phase.
+> **Builder** design pattern lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
 ## 🎯 Overall Concept
 
