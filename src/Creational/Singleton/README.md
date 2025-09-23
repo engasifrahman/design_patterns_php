@@ -4,7 +4,6 @@
 
 ![Design Pattern](https://img.shields.io/badge/Pattern-Creational-FF6B6B?style=for-the-badge)
 ![PHP Compatible](https://img.shields.io/badge/PHP-8.4+-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production%20Ready-✅-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 ## 🌟 Overview
@@ -14,7 +13,7 @@
 | **Pattern Type** | Creational |
 | **Purpose** | Control object creation and ensure single instance |
 | **Complexity** | ⭐☆☆☆☆ |
-| **Popularity** | ⭐⭐⭐⭐⭐ |
+| **Popularity** | ⭐⭐⭐☆☆ |
 
 ## 📖 Definition
 
@@ -130,64 +129,6 @@ The Singleton pattern embodies the principle of **controlled scarcity** - creati
 - **Dependency Injection** → For better testability
 - **Service Locator** → Similar global access, different implementation
 - **Monostate** → Multiple instances, shared state
-
-## 🛡️ Protection Mechanisms
-
-### 🛡️ Defense Layers
-1. **Private Constructor** → Blocks direct instantiation
-2. **Final Class** → Prevents inheritance bypass
-3. **Clone Protection** → Stops object duplication
-4. **Serialization Guard** → Prevents storage/recreation
-5. **Thread Safety** → Controls concurrent access
-
-## 🏆 Best Practices
-
-### ✅ Do's
-- 🎯 **Use for legitimate shared resources**
-- 📝 **Document the Singleton nature clearly**
-- 🧪 **Implement proper testing strategies**
-- 🔒 **Add thread safety if needed**
-- 🏗️ **Consider interface implementation**
-
-### ❌ Don'ts
-- 🚫 **Use as global variables**
-- 🚫 **Overuse throughout application**
-- 🚫 **Ignore testing implications**
-- 🚫 **Forget about thread safety**
-- 🚫 **Use for simple utilities**
-
-## 📋 Common Use Cases
-
-### 🗃️ Data Management
-- **Database Connection Pooling**
-- **Global Cache Systems**
-- **Application Configuration**
-- **Session Management**
-
-### 🛠️ System Services
-- **Logger and Monitoring Services**
-- **Hard Device Controllers**
-- **Service Locators**
-- **API Client Management**
-
-### 🎮 Application Core
-- **Game Engine Components**
-- **Plugin Registries**
-- **Event Dispatchers**
-- **State Machines**
-
-## ⚠️ Anti-Pattern Alerts
-
-### 🚨 Warning Signs
-- **God Object** → Singleton doing too much
-- **Testability Issues** → Hard to unit test
-- **Hidden Dependencies** → Implicit couplings
-- **Global State Abuse** → Uncontrolled side effects
-
-### 🔧 Solutions
-- **Dependency Injection** → Explicit dependencies
-- **Interface Segregation** → Better design
-- **Proper Scoping** → Right tool for right job
 
 ## 🏁 Conclusion
 
