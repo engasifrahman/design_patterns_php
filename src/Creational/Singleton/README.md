@@ -118,18 +118,6 @@ The Singleton pattern embodies the principle of **controlled scarcity** - creati
 | **Return Type** | Always same | New instances |
 | **Complexity** | Simple | Variable |
 
-## 🔗 Related Patterns
-
-### 🤝 Complementary Patterns
-- **Factory Method** → Often creates Singleton instances
-- **Facade** → May use Singleton for simplified access
-- **Proxy** → Can control access to Singleton instances
-
-### 🔄 Alternative Patterns
-- **Dependency Injection** → For better testability
-- **Service Locator** → Similar global access, different implementation
-- **Monostate** → Multiple instances, shared state
-
 ## 🏁 Conclusion
 
 The **Singleton Pattern** is like a **specialized surgical tool** - incredibly powerful when used correctly in the right situations, but potentially dangerous when misused.
