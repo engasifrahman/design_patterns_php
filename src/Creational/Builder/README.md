@@ -102,7 +102,6 @@ The Builder pattern embodies the principle of **controlled construction** - brea
 
 ### 🔄 Better Alternatives
 - **Factory Method** - For simpler object creation needs
-- **Static Factory Methods** - For simple, readable creation methods
 - **Constructor** - For objects with few required parameters
 - **Dependency Injection** - For injecting dependencies rather than building
 
@@ -125,19 +124,6 @@ The Builder pattern embodies the principle of **controlled construction** - brea
 | **Readability** | Very readable | Can be confusing |
 | **Validation** | Step-by-step validation | All-at-once validation |
 | **Flexibility** | Highly flexible | Inflexible |
-
-## 🔗 Related Patterns
-
-### 🤝 Complementary Patterns
-- **Director** → Often used with Builder to provide construction recipes
-- **Factory Method** → Can create appropriate builders
-- **Composite** → Builders often create composite objects
-- **Prototype** → Builders can use prototypes as starting points
-
-### 🔄 Alternative Patterns
-- **Abstract Factory** → For creating families of related objects
-- **Factory Method** → For simpler object creation
-- **Static Factory** → For simple, static creation methods
 
 ## 🏁 Conclusion
 
