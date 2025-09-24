@@ -1,6 +1,9 @@
 <?php
 
-namespace DesignPatterns\Creational\FactoryMethod;
+namespace DesignPatterns\Creational\FactoryMethod\WithFactory;
+
+use DesignPatterns\Creational\FactoryMethod\Ship;
+use DesignPatterns\Creational\FactoryMethod\TransportInterface;
 
 /**
  * Concrete creator for sea logistics.

@@ -1,6 +1,8 @@
 <?php
 
-namespace DesignPatterns\Creational\FactoryMethod;
+namespace DesignPatterns\Creational\FactoryMethod\WithFactory;
+
+use DesignPatterns\Creational\FactoryMethod\TransportInterface;
 
 
 /**

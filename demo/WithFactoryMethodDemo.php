@@ -2,10 +2,11 @@
 
 namespace DesignPatterns\Creational\FactoryMethod;
 
+use DesignPatterns\Creational\FactoryMethod\WithFactory\SeaLogistics;
+use DesignPatterns\Creational\FactoryMethod\WithFactory\RoadLogistics;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use DesignPatterns\Creational\FactoryMethod\RoadLogistics;
-use DesignPatterns\Creational\FactoryMethod\SeaLogistics;
 
 /**
  * Factory Method Pattern Demonstration - Logistics Example

@@ -20,7 +20,7 @@
 
 > **"The Subclass Director of Object Creation"** 🎬
 > 
-> The **Factory Method** pattern defines an interface for creating an object in a superclass, but allows subclasses to alter the type of objects that will be created.
+> The **Factory Method** pattern defines an interface (or abstract method) for creating an object in a superclass, but allows subclasses to decide which specific class to instantiate.
 
 ## 🎯 Overall Concept
 
@@ -100,44 +100,36 @@ The Factory Method pattern embodies the principle of **deferred creation** - all
 - ❌ **Static Creation**: When creation logic doesn't need variation
 
 ### 🔄 Better Alternatives
-- **Simple Factory** - For simpler creation needs without subclassing
-- **Abstract Factory** - For creating families of related objects
 - **Builder** - For complex object construction with many steps
+- **Abstract Factory** - For creating families of related objects
 - **Dependency Injection** - For external dependency management
 
 ## 🆚 Pattern Comparison
 
-### 🔄 Factory Method vs. Simple Factory
-| **Aspect** | **Factory Method** | **Simple Factory** |
-|------------|---------------|-------------|
-| **Inheritance** | Uses subclassing | Uses conditional logic |
-| **Extensibility** | Easy to extend | Requires modification |
-| **Complexity** | More complex | Simpler |
-| **Flexibility** | More flexible | Less flexible |
-| **Use Case** | Frameworks, plugins | Simple applications |
+Got it 👍 Here’s the **Factory Method vs. Dependency Injection** difference table in the same style you showed:
+
+---
+
+### 🏭 Factory Method vs. Dependency Injection
+
+| **Aspect**              | **Factory Method**                                                | **Dependency Injection (DI)**                                     |
+| ----------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Category**            | Creational **design pattern**                                     | Architectural **principle/technique**                             |
+| **Purpose**             | Encapsulates object creation logic                                | Provides dependencies from outside                                |
+| **Complexity**          | Moderate — requires extra factory classes/methods            | Low–High — can be simple (manual DI) or complex (using a DI container/framework) |
+| **Control of Creation** | Factory decides which class/object to instantiate                 | Caller/container provides the ready-made dependency               |
+| **Coupling**            | Reduces coupling between client and concrete classes              | Decouples classes from creating/locating dependencies             |
+| **Use Case**               | Use when object creation logic is complex or needs centralization | Use when you want flexible, testable, and loosely coupled classes |        |
 
 ### 🏭 Factory Method vs. Abstract Factory
 | **Aspect** | **Factory Method** | **Abstract Factory** |
 |------------|---------------|-------------|
+| **Category** | Creational **design pattern** | Creational **design pattern** |
 | **Purpose** | Single product creation | Product families |
 | **Methods** | One factory method | Multiple factory methods |
 | **Complexity** | Simpler | More complex |
 | **Scope** | Single product | Multiple related products |
 | **Use Case** | Deferred instantiation | Cross-platform UI |
-
-## 🔗 Related Patterns
-
-### 🤝 Complementary Patterns
-- **Template Method** → Often used together with Factory Method
-- **Abstract Factory** → May use Factory Methods to implement products
-- **Prototype** → Can be used as an alternative to Factory Method
-- **Dependency Injection** → Complements Factory Method for dependency management
-
-### 🔄 Alternative Patterns
-- **Simple Factory** → For simpler creation needs
-- **Builder** → For complex object construction
-- **Singleton** → When only one instance is needed
-- **Object Pool** → For reusable object management
 
 ## 🏁 Conclusion
 
