@@ -2,7 +2,7 @@
 
 namespace DesignPatterns\Creational\FactoryMethod\WithFactory;
 
-use DesignPatterns\Creational\FactoryMethod\TransportInterface;
+use DesignPatterns\Creational\FactoryMethod\ITransport;
 
 
 /**
@@ -37,9 +37,9 @@ abstract class LogisticsFactory
      * Factory method to create a transport instance.
      * Concrete subclasses must implement this method.
      *
-     * @return TransportInterface
+     * @return ITransport
      */
-    abstract public function createTransport(): TransportInterface;
+    abstract public function createTransport(): ITransport;
 
     /**
      * Get logistics type name.

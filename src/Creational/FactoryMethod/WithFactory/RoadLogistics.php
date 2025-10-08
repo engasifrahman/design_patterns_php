@@ -3,7 +3,7 @@
 namespace DesignPatterns\Creational\FactoryMethod\WithFactory;
 
 use DesignPatterns\Creational\FactoryMethod\Truck;
-use DesignPatterns\Creational\FactoryMethod\TransportInterface;
+use DesignPatterns\Creational\FactoryMethod\ITransport;
 
 /**
  * Concrete creator for road logistics.
@@ -14,7 +14,7 @@ class RoadLogistics extends LogisticsFactory
     /**
      * {@inheritDoc}
      */
-    public function createTransport(): TransportInterface
+    public function createTransport(): ITransport
     {
         return new Truck();
     }

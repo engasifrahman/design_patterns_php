@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\FactoryMethod;
 /**
  * Concrete transport product - Truck for road deliveries.
  */
-class Truck implements TransportInterface
+class Truck implements ITransport
 {
     private const CAPACITY = 10000.0; // 10 tons
     private const SPEED = 60.0; // 60 km/h average speed

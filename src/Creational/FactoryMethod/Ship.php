@@ -5,7 +5,7 @@ namespace DesignPatterns\Creational\FactoryMethod;
 /**
  * Concrete transport product - Ship for sea deliveries.
  */
-class Ship implements TransportInterface
+class Ship implements ITransport
 {
     private const CAPACITY = 500000.0; // 500 tons
     private const SPEED = 25.0; // 25 knots average speed
